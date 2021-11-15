@@ -1,0 +1,26 @@
+﻿@model EmployeeList.Models.Employee
+@{
+    ViewBag.Title = "Новый сотрудник";
+}
+<form asp-action="create" asp-controller="home">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Имя</label>
+        <input type="text" asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Department" class="control-label">Отдел</label>
+        <input type="text" asp-for="Department" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber" class="control-label">Номер телефона</label>
+        <input type="number" asp-for="PhoneNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Photo" class="control-label">Фото</label>
+        <input type="text" asp-for="Photo" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Отправить" class="btn btn-default" />
+    </div>
+
+</form>
